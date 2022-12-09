@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+:root {
+  --bg-green: hsl(171, 66%, 44%);
+  --bg-blue: hsl(233, 100%, 69%);
+  --color-dg: hsl(210, 10%, 33%);
+  --color-gray: hsl(201, 11%, 66%);
+}
+
+.bg img {
+  width: 100%;
+  position: absolute;
+}
+
+.hero-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 7rem 0.8rem 0 0.8rem;
+}
+
+.hero-area .logo img {
+  max-width: 7rem;
+}
+
+.hero-area h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: var(--color-dg);
+  padding: 2rem 0 1rem 0;
+}
+
+.hero-area p {
+  color: var(--color-gray);
+  padding-bottom: 2.8rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.9rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  margin: 0.6rem;
+  cursor: pointer;
+}
+
+.green-btn button {
+  box-shadow: 1px 3px 1px hsla(171, 66%, 44%, 0.2);
+  background-color: var(--bg-green);
+}
+
+.blue-btn button {
+  background-color: var(--bg-blue);
+  box-shadow: 1px 3px 1px hsla(233, 100%, 69%, 0.2);
+}
+
+.head-para {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8rem 0 3rem 0;
+  text-align: center;
+}
+
+.head-para h2 {
+  color: var(--color-dg);
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.head-para p {
+  color: var(--color-gray);
+  padding: 0 0.7rem 2.8rem 0.7rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.track-detail {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pc-img {
+  max-width: 100%;
+}
+
+.pc-img img {
+  width: 100%;
+  transform: translateX(-2rem);
+}
+
+.track-text {
+  max-width: 40%;
+  margin: 4rem;
+}
+
+.track-text h2 {
+  color: var(--color-dg);
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.track-text p {
+  color: var(--color-gray);
+  line-height: 1.5rem;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+
+.device-img {
+  display: flex;
+  justify-content: center;
+}
+
+.device-img img {
+  max-width: 55%;
+}
+
+.boost-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 24rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.card img {
+  max-width: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  color: var(--color-dg);
+  padding: 1rem;
+}
+
+.card p {
+  color: var(--color-gray);
+  line-height: 1.3rem;
+  font-size: 1rem;
+}
+.partners {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 14rem;
+}
+
+.partners img {
+  max-width: 100%;
+}
+
+.main-footer {
+  background-color: rgb(243, 243, 243);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 6rem;
+}
+
+.f-menu {
+  display: flex ;
+  flex-wrap: wrap;
+}
+
+.col {
+  margin-left: 4rem;
+}
+
+.col p {
+  color: var(--color-dg);
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.f-logo img {
+  max-width: 3.5rem;
+}
+
+.f-social-icon {
+  align-self: center;
+}
+.f-social-icon i {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: var(--color-dg);
+}
+
+.attribution {
+    font-size: .8rem;
+    text-align: center;
+  }
+  .attribution a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+  }
+
+  .col p:hover, .f-social-icon i:hover{
+    color: var(--bg-green);
+    cursor: pointer;
+  }
+
+@media screen and (max-width: 375px) {
+  .pc-img img {
+    transform: translateX(0);
+    padding: 1.5rem;
+  }
+
+  .track-text {
+    max-width: 100%;
+    text-align: center;
+    margin: 1rem;
+  }
+  .device-img img {
+    max-width: 100%;
+  }
+
+  .partners {
+    display: flex;
+    flex-direction: column;
+    margin: 7rem;
+  }
+
+  .partners img{
+    margin-bottom: 3rem;
+  }
+
+  .main-footer{
+    flex-direction: column;
+  }
+  .f-menu{
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+
+  .col{
+    text-align: center;
+    margin: auto;
+  }
+
+  .f-social-icon i{
+    margin: .8rem;
+  }
+}
